@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.example.dell.scarnesdice.MainActivity">
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="93dp"
+        android:layout_toLeftOf="@+id/dice"
+        android:layout_toStartOf="@+id/dice"
+        android:text="ROLL" />
+
+    <Button
+        android:id="@+id/hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/roll"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/roll"
+        android:layout_toRightOf="@+id/roll"
+        android:text="HOLD" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hold"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/hold"
+        android:layout_toRightOf="@+id/hold"
+        android:text="RESET" />
+
+    <ImageView
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        app:srcCompat="@drawable/dice1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_marginTop="21dp"
+        android:text="Your score: "
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="29dp"
+        android:text="Your Current Score:"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/reset"
+        android:layout_alignRight="@+id/reset"
+        android:text="Computer's Score: "
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:text="Computer;s Current Score"
+        android:textColor="@android:color/background_dark"
+        android:visibility="invisible" />
+</RelativeLayout>
